@@ -4,6 +4,7 @@
 
 2021-0508
 1.1001 害死人不偿命的(3n+1)猜想
+```
 import java.util.Scanner;
 
 public class Main{
@@ -27,3 +28,4 @@ public class Main{
 	}
 
 }
+```
