@@ -29,3 +29,41 @@ public class Main{
 
 }
 ```
+
+**2021-0509**  
+1.1011 A+B 和 C 
+```java
+import java.util.Scanner;
+public class P0509_01 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int m=sc.nextInt();
+		long[][] num= new long[m][4];
+		
+		for(int i=0;i<m;i++) {
+			for(int j=0;j<3;j++) {
+				num[i][j] = sc.nextLong();
+			}
+			if((num[i][0] + num[i][1]) > num[i][2]) {
+				num[i][3] = 1;
+			}
+			else {
+				num[i][3] = 0;
+			}
+		
+		}
+		for(int k=0;k<m;k++) {
+			System.out.print("Case #" + (k+1) + ": ");
+			if(num[k][3] == 1) {
+				System.out.println("true");
+			}
+			else {
+				System.out.println("false");
+			}
+		}
+	}
+
+}
+
+```
